@@ -1,0 +1,58 @@
+$color-uno:#F5DA81;
+$color-dos:black;
+$color-tres:#FF8DAC;
+$color-buttom:#9cc76b;
+
+:root{
+    --background-color: #F5DA81;
+    --primary-color: black;
+    --highlight-color: #FF8DAC;
+}
+
+*{
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $color-uno;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+}
+
+:-moz-selection{
+    background-color: $color-tres;
+}
+::selection{
+    background-color: $color-tres;
+}
+
+a{
+  color: $color-dos;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.2s ease-in-out
+}
+
+a:hover{
+    color: $color-tres;
+}
+
+h2, h3{
+    font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+}

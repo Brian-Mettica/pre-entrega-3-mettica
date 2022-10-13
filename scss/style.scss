@@ -1,0 +1,53 @@
+@import "./base/reset";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main-index";
+@import "./layout/main-burgers";
+@import "./layout/footer-burgers";
+@import "./layout/main-nosotros";
+@import "./layout/main-pedido";
+@import "./layout/footer-pedido";
+@import "./layout/main-postres";
+@import "./layout/aside-postres";
+@import "./global/base";
+@import "./components/grid-work";
+@import "./layout/media";
+
+
+
+
+
+
+
+@keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(3rem);
+    }
+  }
+
+
+@keyframes opening-logo{
+    0%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce{
+    0% {transform: translateY(500px);}
+    80% {transform: translateY(-30px);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes fade-in{
+    0%{height: 0vh;}
+    50%{height: 150vh;}
+    100%{height: 0vh;}
+}
+

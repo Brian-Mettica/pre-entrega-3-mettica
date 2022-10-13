@@ -1,0 +1,104 @@
+@mixin video{
+  
+}
+@mixin hover{
+  background-color: $color-dos;
+        width: 100%;
+        height: 150%;
+        display: grid;
+        position: absolute;
+        z-index: 2;
+        top: -25%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        transform: skewY(10deg) scale(1, 1);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  background: url(../imag/home-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+  }
+
+  .image {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+      padding: 1rem;
+      animation: float 3s linear infinite;
+    }
+  }
+
+  .content {
+    h3 {
+      font-size: 5rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.7rem;
+      color: #666;
+      padding: 1rem 0;
+    }
+  }
+}
+
+ 
+  
+    .item {
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+  
+      img {
+        width: 101%;
+        margin-top: -60px;
+        transform: skewY(10deg) scale(1, 1);
+        transition: all 0.075s;
+      }
+  
+      &:hover img {
+        transform: skewY(10deg) scale(1.2, 1.2);
+      }
+  
+      .bg-hover {
+        @include hover;
+      }
+  
+      &:hover .bg-hover {
+        overflow: hidden;
+        opacity: 1;
+  
+        .info {
+          animation-name: bounce;
+          animation-duration: 0.4s;
+          animation-timing-function: ease-in-out;
+        }
+      }
+  
+      .bg-hover {
+        .title {
+          color: white;
+        }
+  
+        .customer {
+          color: $color-uno;
+        }
+      }
+    }
+  
+

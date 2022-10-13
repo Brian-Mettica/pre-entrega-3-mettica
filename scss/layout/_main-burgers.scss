@@ -1,0 +1,32 @@
+@mixin contenedor{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  display: contents;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+@mixin grid{
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.contenedor {
+  @include contenedor;
+}
+  
+  
+  .contenedor-conciertos {
+    @include grid;
+  }
+  
+
+    .textos {
+      height: 100%;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  

@@ -1,0 +1,107 @@
+@mixin banner {
+  height: 50vh;
+    margin-top: 10px;
+    position: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;;
+}
+@mixin baner-description {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 25px;
+}
+@mixin button-banner {
+  position: relative;
+    background: #9cc76b;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 20px;
+  
+    &:hover {
+      border: 2px solid #9cc76b;
+      background: none;
+    }
+    
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .banner {
+    @include banner;
+  }
+  
+  .banner__descripcion {
+   @include baner-description;
+   
+}
+  
+  
+  .button__banner {
+   @include button-banner;
+    
+  }
+  
+  .galeria {
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    margin: 20px;
+  }
+  
+  .team {
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    background: #9cc76b;
+    padding: 30px;
+  }
+  
+  .team__columna img {
+    border-radius: 50%;
+  }
+  
+  .team p {
+    text-align: justify;
+  }
+  
+  .team__grid {
+    display: grid;
+    grid-gap: 30px;
+  }
+  
+  .info {
+    h1 {
+      color: #9cc76b;
+      font-size: 30px;
+    }
+  
+    text-align: center;
+  }
+  
+  .info__columna {
+    margin: 20px;
+  }
+  
+  .info .contenedor {
+    display: grid;
+    grid-gap: 10px;
+  }
